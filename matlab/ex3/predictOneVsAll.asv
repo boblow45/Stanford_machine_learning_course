@@ -34,10 +34,10 @@ for num = 1:num_labels
     temp = [temp, X * all_theta(num,:)'];
 end
 
-for row = 1:m
-    [M, I] = max(temp(row,:), [], "linear");
-     p(row) = I;
-
+for row in 
+[M, I] = max(temp, [], 2, "linear");
+p = mod(I,10);
+%X' * all_theta;
 
 
 

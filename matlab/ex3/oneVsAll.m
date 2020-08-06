@@ -49,6 +49,11 @@ X = [ones(m, 1) X];
 %                 initial_theta, options);
 %
 
+for number = 1:num_labels  
+    theta = fmincg (@(t)(lrCostFunction(t, X, (y == number), lambda)), all_theta(number,:)');
+    all_theta(number,:) = theta';
+end
+
 
 
 

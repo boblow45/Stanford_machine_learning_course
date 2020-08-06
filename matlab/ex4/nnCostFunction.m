@@ -63,7 +63,7 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 
-
+g = 1.0 ./ (1.0 + exp(-z));
 
 
 
